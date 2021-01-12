@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  background: #000000;
+}
+
+a{
+	color:white;
+  text-decoration: none;
+}
+
+h1{
+	font-family: 'Permanent Marker', cursive;
+	color: black;
+	font-size: 40px;
+}
+
+h2 {
+	font-family: 'Permanent Marker', cursive;
+	color: white;
+	font-size: 20px;
+	background-color: #000000;
+	padding: 10px;
+}
+
+.grid-container-1 {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #334b72;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 10px;
+  color: white;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 20px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+
+}
+
+.photobooth {
+  background: black;
+  max-width: 150rem;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+/*clearfix*/
+.photobooth:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+}
+
+.player {
+  display: none;
+}
+
+/*
+  Strip!
+*/
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  background: white;
+}
